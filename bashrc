@@ -8,13 +8,16 @@ export DISPLAY="$DNS_IP:0"
 
 
 ##start_docker pour wsl
-sudo /etc/init.d/docker start
+#sudo /etc/init.d/docker start
+sudo service docker start   
 
 
+#WSL dont start at HOME
+cd ~
 
 ##INFO GIT REPO
 #---------------------A mettre dans le bashrc ----------------------------------------------------------------------------------------------
-source ~/.gitbash
+#source ~/.gitbash
 
 
 #---------------------a mettre dans un fichier séparé----------------------------------------------------------------------------------------------
@@ -71,8 +74,8 @@ export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[34m
 
 
 # ----------Un truc sur NVM -------------------------------------------------------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
